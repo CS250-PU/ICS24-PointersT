@@ -9,6 +9,8 @@
 //******************************************************************************
 
 #include <iostream>
+#include "../include/Rational.h"
+#include "../include/RationalSet.h"
 
 using namespace std;
 
@@ -37,6 +39,14 @@ int main () {
   cout << "Address of x is: " << pX << endl;
   cout << "Address of x is: " << &x << endl;
 
+  // *** pointers and classes ***
+
+  Rational cR1 (1, 2), cR2 (2, 3);
+  cout << "Rational #1: " << cR1 << " Rational #2: " << cR2 << endl;
+
+  RationalSet cRSet;
+  cout << "cRSet: " << cRSet.add (cR1) << endl;
+  cout << "cRSet: " << cRSet.add (cR2) << endl;
 
   return EXIT_SUCCESS;
 
