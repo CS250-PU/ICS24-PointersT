@@ -22,7 +22,10 @@ RationalSet::RationalSet () {
 }
 
 bool RationalSet::isIn (const Rational &rcRational) const {
-	return find (mcRationals.begin (), mcRationals.end (), rcRational) != mcRationals.end ();
+  bool bIsFound = false;
+
+  // Write the logic using a const_iterator
+  return bIsFound;
 }
 
 unsigned int RationalSet::size () const {

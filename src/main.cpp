@@ -47,6 +47,7 @@ int main () {
   RationalSet cRSet;
   cout << "cRSet: " << cRSet.add (cR1) << endl;
   cout << "cRSet: " << cRSet.add (cR2) << endl;
+  cout << "cRSet: " << cRSet.add (cR2) << endl;
 
   return EXIT_SUCCESS;
 
